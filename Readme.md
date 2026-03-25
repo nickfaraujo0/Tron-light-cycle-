@@ -29,18 +29,5 @@ python main.py
 - **Esc**: quit
 - **Game Over**: press **R** or **Space** to restart
 
-## AI (explainable)
 
-At each step the AI:
-
-1. Generates possible actions: UP/DOWN/LEFT/RIGHT (except reverse)
-2. Filters actions using **constraints** (inside grid, not occupied)
-3. Scores remaining actions with a simple **heuristic**:
-   - Prefer moves with **more reachable free space** (flood-fill count)
-   - Avoid **dead ends** (few/no safe neighbors after the move)
-4. Picks the best-scoring move (random tie-break)
-
-## Note (Windows / Python 3.14)
-
-If you’re using **Python 3.14**, `pygame` may not have wheels yet. This project uses **`pygame-ce`** (community edition), which installs a compatible `pygame` module and works the same for this lab.
 
